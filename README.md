@@ -1,10 +1,8 @@
-# [Project Name]
+# Bpod Arduino Panel
 
-> **📝 Template Instructions:** Replace all bracketed placeholders `[like this]` with your project-specific information. Remove sections that don't apply to your project. Delete this instruction block when you're done.
+![GitHub release](https://img.shields.io/github/v/release/SainsburyWellcomeCentre/Bpod-Arduino-Panel.svg)
 
-![GitHub release](https://img.shields.io/github/v/release/SainsburyWellcomeCentre/[your-repo].svg)
-
-[Brief one-line description of what your project does]
+Bpod Arduino Panel is a Bpod expansion module that drive by Arduino Due.
 
 > **Note:** [Any important warnings or notes about the project]
 
@@ -22,7 +20,7 @@
 
 ## 🌐 View Online (eCAD)
 
-View the complete electronic design project online via [Altium 365 Viewer](https://sainsburywellcomecentre.github.io/fablabs-documentation/#[your-repo])
+View the complete electronic design project online via [Altium 365 Viewer](https://sainsburywellcomecentre.github.io/fablabs-documentation/#Bpod-Arduino-Panel)
 
 ## 🚀 Getting Started
 
@@ -55,13 +53,13 @@ View the complete electronic design project online via [Altium 365 Viewer](https
 
 ## 💻 Software Requirements
 
-To access the source design files:
+- **Altium Designer 24** or newer  
+  Academic licenses available via [Altium Education](https://www.altium.com/education/)
 
-- **[eCAD Software] [Version]** or newer _(for electronic design files)_  
-  Academic licenses available via [[Software] Education]([link])
-- **[mCAD Software] [Version]** or newer _(for mechanical design files)_  
-  Academic licenses via [[Software] Education]([link])
-- **[Additional Software]** _(if applicable for firmware/programming)_
+- **Autodesk Inventor Pro 2025** or newer  
+  Academic licenses via [Autodesk Education](https://www.autodesk.com/education/home)
+
+- **Arduino IDE** (Download from [Arduino Software](https://www.arduino.cc/en/software))
 
 ## 📜 License
 
@@ -84,23 +82,7 @@ Under the following terms:
 
 [If your project is based on or references academic work, list citations here]
 
-```bibtex
-@ARTICLE{AuthorYear,
-  title     = "[Paper Title]",
-  author    = "[Author Names]",
-  journal   = "[Journal Name]",
-  volume    = "[Volume]",
-  number    = "[Number]",
-  pages     = "[Pages]",
-  year      = "[Year]",
-  url       = "[URL]",
-  doi       = "[DOI]"
-}
-```
-
 ## 🤝 Contributing
-
-[If you want to accept contributions, add guidelines here]
 
 1. Fork the repository
 2. Create a feature branch
@@ -109,14 +91,12 @@ Under the following terms:
 
 ## ❤ Contributors
 
- <a href = "https://github.com/sainsburywellcomecentre/[your-repo]/graphs/contributors">
-   <img src = "https://contrib.rocks/image?repo=sainsburywellcomecentre/[your-repo]" alt="Contributors"/>
+ <a href = "https://github.com/sainsburywellcomecentre/fablabs-Bpod-Arduino-Panel/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=sainsburywellcomecentre/fablabs-Bpod-Arduino-Panel" alt="Contributors"/>
  </a>
 
 ## 📧 Contact
 
-[Contact information or support channels]
-
-- **Author**: [Your Name]
-- **Email**: [contact-email]
-- **Website**: [FabLabs Documentation](https://sainsburywellcomecentre.github.io/fablabs-documentation/#[your-repo])
+- **Author**: [@DCisHurt](https://github.com/DCisHurt)
+- **Email**: [yuhsuan.chen@ucl.ac.uk](mailto:yuhsuan.chen@ucl.ac.uk)
+- **Website**: [FabLabs](https://sainsburywellcomecentre.github.io/fablabs-documentation/#Bpod-Arduino-Panel)
