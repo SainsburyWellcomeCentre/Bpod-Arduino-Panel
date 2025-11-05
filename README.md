@@ -1,113 +1,67 @@
-# Monitor Blanking
+# [Project Name]
 
-A TTL-controlled light switch designed to blank monitor displays for use in behavioural experiments.
+> **📝 Template Instructions:** Replace all bracketed placeholders `[like this]` with your project-specific information. Remove sections that don't apply to your project. Delete this instruction block when you're done.
 
-> **Note:** This device modifies existing monitors. Some tuning may be required depending on the model.
+![GitHub release](https://img.shields.io/github/v/release/SainsburyWellcomeCentre/[your-repo].svg)
 
-<img src="img/assembled.png" alt="Assembled" width="800"/>
+[Brief one-line description of what your project does]
+
+> **Note:** [Any important warnings or notes about the project]
+
+<img src=".img/[main-image].png" alt="[Image Description]" width="800"/>
+
+[Detailed description of the project, its purpose, and the problem it solves. Include context about why this project is useful and what applications it serves.]
 
 ## 🔧 Features
 
-- Electrically isolated TTL input (up to 1 MHz)
-- Sub-1 µs switching time
-- Adjustable backlight brightness
-- Forced-on switch for testing/debugging
-- Supports up to 15 W output power
+- [Feature 1 - describe key functionality]
+- [Feature 2 - describe key functionality]
+- [Feature 3 - describe key functionality]
+- [Feature 4 - describe key functionality]
+- [Add/remove features as needed]
 
 ## 🌐 View Online (eCAD)
 
-View the complete electronic design project online via [Altium 365 Viewer](https://sainsburywellcomecentre.github.io/fablab/):
-
-[![View in Altium 365](https://img.shields.io/badge/View%20in-Altium%20365-blue?logo=altium&logoColor=white)](https://sainsburywellcomecentre.github.io/fablab/)
+View the complete electronic design project online via [Altium 365 Viewer](https://sainsburywellcomecentre.github.io/fablabs-documentation/#[your-repo])
 
 ## 🚀 Getting Started
 
-<img src="img/panel.png" alt="Panel" width="300"/>
+[Provide step-by-step instructions for initial setup and basic usage]
 
-## 📁 Project Structure
+1. [First step - setup/installation]
+2. [Second step - configuration]
+3. [Third step - basic operation]
 
-```bash
-├── eCAD/
-│   ├── Assembly/
-│   │   ├── BOM.xlsx
-│   │   └── pick and place.csv
-│   ├── Drawing/
-│   │   ├── 2d.dxf
-│   │   └── 3d.step
-│   ├── Fabrication/
-│   │   ├── Gerber/
-│   │   └── NC Drill/
-│   ├── Source/
-│   └── Schematic.pdf
-├── mCAD/
-│   ├── 3DP/
-│   │   ├── ring.stl
-│   │   ├── button.stl
-│   │   └── base.stl
-│   ├── Source/
-│   └── panel_drill.dxf
+<img src=".img/[usage-image].png" alt="[Usage Description]" width="300"/>
 
+[Additional usage instructions, tips, or references to external resources]
 
-```
+[If applicable, mention any measurement tools or validation methods]
 
-### `eCAD/`
+## ⚙️ Configuration & Tuning _(if applicable)_
 
-Contains Altium Designer source files, schematics, fabrication outputs, and documentation.
+[If your project requires calibration or fine-tuning, describe the process here]
 
-### `mCAD/`
+## 🔧 [Configuration/Calibration] Guidelines
 
-Contains 3D mechanical designs (Inventor 2025) and printable STL models.
-
-## 🛠️ Build It Yourself
-
-### 1. Get the Parts
-
-> For users without in-house fabrication capabilities.
-
-- **PCB**: Order from [JLCPCB](https://jlcpcb.com/) (includes assembly service). Refer to the [Bill of Materials (BOM)](eCAD/Assembly/BOM.xlsx) for manual assembly.
-- **3D Prints**: Print the mechanical components using any 3D printing service. JLCPCB also offers 3D printing at competitive prices.
-
-See the [JLCPCB Assembly Tutorial](https://jlcpcb.com/capabilities/assembly) for step-by-step instructions.
-
-### 2. Assembly & Installation
-
-1. Place the **ring** under the potentiometer and insert it into the PCB before soldering. This ensures alignment with the BNC connector.
-2. Insert the **button** into the tactile switch.
-3. Attach the **base** underneath the PCB.
-4. Open the monitor’s rear panel and locate the 6-pin cable connected to the motherboard. Disconnect it and plug it into the white 6-pin connector on the circuit board.
-5. Connect the monitor's **live and neutral wires** to the 2-pin screw terminal on the board.
-6. Drill the back panel of the monitor to accommodate the BNC, potentiometer, and pushbutton.
-
-   Use `mCAD/panel_drill.dxf` or refer to the manual drill dimensions below:
-
-   <p align="center">
-       <img src="img/drill.png" alt="Drill Diagram" height="500"/>
-   </p>
-
-7. Mount the PCB to the panel and reassemble the monitor.
-
-## ⚙️ Fine-Tuning the Blanking Driver
-
-The blanking driver circuit is designed to support a wide range of monitor backlight types. However, to ensure optimal performance, you may need to fine-tune the **VLED** voltage.
-
-### 🔧 Voltage Adjustment Guidelines
-
-- Press the pushbutton to force the monitor **ON**, then use the trimmer **R9** to adjust the **VLED** until the backlight reaches the desired brightness level.
-- The output voltage **VLED** can be adjusted within the range of **41 V to 61 V**.
-  > The recommended **VLED** is at least **2 V higher** than the forward voltage of the backlight panel.
+- [Step 1 - describe calibration procedure]
+- [Step 2 - describe parameter adjustment]
+- [Operating ranges and recommended settings]
+  > [Important notes or warnings about configuration]
 
 <div align="center">
-  <img src="img/trimmer.png" alt="Trimmer R9" width="600"/>
+  <img src=".img/[configuration-image].png" alt="[Configuration Description]" width="600"/>
 </div>
 
 ## 💻 Software Requirements
 
-To access the source CAD projects:
+To access the source design files:
 
-- **Altium Designer 24** or newer  
-  Academic licenses available via [Altium Education](https://www.altium.com/education/)
-- **Autodesk Inventor Pro 2025** or newer  
-  Academic licenses via [Autodesk Education](https://www.autodesk.com/education/home)
+- **[eCAD Software] [Version]** or newer _(for electronic design files)_  
+  Academic licenses available via [[Software] Education]([link])
+- **[mCAD Software] [Version]** or newer _(for mechanical design files)_  
+  Academic licenses via [[Software] Education]([link])
+- **[Additional Software]** _(if applicable for firmware/programming)_
 
 ## 📜 License
 
@@ -124,4 +78,45 @@ Under the following terms:
 - **ShareAlike** — Distribute your contributions under the same license.
 - **No additional restrictions** — Don’t apply legal or technological measures that prevent others from doing anything the license permits.
 
-> For the full legal text, see [LICENSE.txt](License.txt).
+> For the full legal text, see [LICENSE](LICENSE).
+
+## 📚 References _(if applicable)_
+
+[If your project is based on or references academic work, list citations here]
+
+```bibtex
+@ARTICLE{AuthorYear,
+  title     = "[Paper Title]",
+  author    = "[Author Names]",
+  journal   = "[Journal Name]",
+  volume    = "[Volume]",
+  number    = "[Number]",
+  pages     = "[Pages]",
+  year      = "[Year]",
+  url       = "[URL]",
+  doi       = "[DOI]"
+}
+```
+
+## 🤝 Contributing
+
+[If you want to accept contributions, add guidelines here]
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## ❤ Contributors
+
+ <a href = "https://github.com/sainsburywellcomecentre/[your-repo]/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=sainsburywellcomecentre/[your-repo]" alt="Contributors"/>
+ </a>
+
+## 📧 Contact
+
+[Contact information or support channels]
+
+- **Author**: [Your Name]
+- **Email**: [contact-email]
+- **Website**: [FabLabs Documentation](https://sainsburywellcomecentre.github.io/fablabs-documentation/#[your-repo])

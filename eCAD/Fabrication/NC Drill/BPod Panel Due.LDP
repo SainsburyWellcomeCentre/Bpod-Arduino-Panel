@@ -1,4 +1,0 @@
-Layer Pairs Export File for PCB: C:\Users\Public\Documents\Altium\BPod Panel Due\BPod Panel Due.PcbDoc
-LayersSetName=Top_Bot_Plated_Thru_Holes|DrillFile=bpod panel due-roundholes-plated.txt|DrillLayers=gtl,g1,g2,gbl
-LayersSetName=Top_Bot_Plated_Slot_Holes|DrillFile=bpod panel due-slotholes-plated.txt|DrillLayers=gtl,g1,g2,gbl
-LayersSetName=Top_Bot_NonPlated_Thru_Holes|DrillFile=bpod panel due-roundholes-nonplated.txt|DrillLayers=gtl,g1,g2,gbl
