@@ -106,8 +106,8 @@ Under the following terms:
 
 ## ❤ Contributors
 
- <a href = "https://github.com/sainsburywellcomecentre/fablabs-Bpod-Arduino-Panel/graphs/contributors">
-   <img src = "https://contrib.rocks/image?repo=sainsburywellcomecentre/fablabs-Bpod-Arduino-Panel" alt="Contributors"/>
+ <a href = "https://github.com/sainsburywellcomecentre/Bpod-Arduino-Panel/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=sainsburywellcomecentre/Bpod-Arduino-Panel" alt="Contributors"/>
  </a>
 
 ## 📧 Contact
@@ -115,3 +115,4 @@ Under the following terms:
 - **Author**: [@DCisHurt](https://github.com/DCisHurt)
 - **Email**: [yuhsuan.chen@ucl.ac.uk](mailto:yuhsuan.chen@ucl.ac.uk)
 - **Website**: [FabLabs](https://sainsburywellcomecentre.github.io/fablabs-documentation/#Bpod-Arduino-Panel)
+
