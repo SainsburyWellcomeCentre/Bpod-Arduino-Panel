@@ -57,7 +57,7 @@ The max voltage levels for all the I/O are configured by the on-board switches. 
 
 The firmware development is based on the Arduino platform, reference from the [Bpod shield](https://github.com/sanworks/Bpod_Gen2/tree/master/Examples/Firmware/Bpod%20Shield) firmware.
 
-The operation code (opcode in Bpod Language) of the device is varied according to the firmware. The functionality of each port has to be pre-defined in the firmware. Please refer to the [opcode table](./OPCODE_TABLE.md) for detailed information on available opcodes and their usage.
+The operation code (opcode in Bpod Language) of the device is varied according to the firmware. The functionality of each port has to be pre-defined in the firmware. Please refer to the [opcode table](firmware/OPCODE_TABLE.md) for detailed information on available opcodes and their usage.
 
 ## 💻 Software Requirements
 
@@ -115,4 +115,5 @@ Under the following terms:
 - **Author**: [@DCisHurt](https://github.com/DCisHurt)
 - **Email**: [yuhsuan.chen@ucl.ac.uk](mailto:yuhsuan.chen@ucl.ac.uk)
 - **Website**: [FabLabs](https://sainsburywellcomecentre.github.io/fablabs-documentation/#Bpod-Arduino-Panel)
+
 
