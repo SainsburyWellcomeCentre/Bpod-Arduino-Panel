@@ -139,12 +139,12 @@ if (Serial.available()) {
       }
       if (readThisChannel) {
         if ((inputChState[i] == 1) && (lastInputChState[i] == 0)) {
-          events[nEvents] = thisEvent; nEvents++;
+          events[nEvents] = thisEvent+0x70; nEvents++;
           inputChSwitchTime[i] = currentTime;
           lastInputChState[i] = inputChState[i];
         }
         if ((inputChState[i] == 0) && (lastInputChState[i] == 1)) {
-          events[nEvents] = thisEvent+1; nEvents++;
+          events[nEvents] = thisEvent+1+0x70; nEvents++;
           inputChSwitchTime[i] = currentTime;
           lastInputChState[i] = inputChState[i];
         }
