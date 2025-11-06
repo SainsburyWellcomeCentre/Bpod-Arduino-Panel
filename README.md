@@ -2,21 +2,20 @@
 
 ![GitHub release](https://img.shields.io/github/v/release/SainsburyWellcomeCentre/Bpod-Arduino-Panel.svg)
 
-Bpod Arduino Panel is a Bpod expansion module that drive by Arduino Due.
+A 58 I/O ports Bpod Module for neuroscience experiments.
 
-> **Note:** [Any important warnings or notes about the project]
+> **Note:** To use this module with timing synchronisation, a Bpod state machine is required. Please refer to the [Bpod documentation](https://sanworks.github.io/Bpod_Wiki/) for more information.
 
-<img src=".img/[main-image].png" alt="[Image Description]" width="800"/>
+<img src=".img/assembled.png" alt="Assembled" width="800"/>
 
-[Detailed description of the project, its purpose, and the problem it solves. Include context about why this project is useful and what applications it serves.]
+The Bpod Arduino Panel is a Bpod expansion module powered by an Arduino Due. Equipped with 44 digital input/output ports, 12 analogue input ports, and 2 analogue output ports, it can drive various behavioural devices such as lights, speakers, valve drivers, and sensors. Each group of ports can be configured between 5V and 3.3V logic levels. This module is specifically designed for compatibility with the Bpod ecosystem, enabling users to synchronise timing when controlling large numbers of devices.
 
 ## 🔧 Features
 
-- [Feature 1 - describe key functionality]
-- [Feature 2 - describe key functionality]
-- [Feature 3 - describe key functionality]
-- [Feature 4 - describe key functionality]
-- [Add/remove features as needed]
+- 44 digital input/output ports + 14 analogue ports (12 in, 2 out)
+- Configurable logic levels (5V/3.3V)
+- One 3.5mm audio output drives up to consumer line level (-10 dBV / 0.316 Vrms).
+- 3U rack mountable panel
 
 ## 🌐 View Online (eCAD)
 
@@ -24,32 +23,41 @@ View the complete electronic design project online via [Altium 365 Viewer](https
 
 ## 🚀 Getting Started
 
-[Provide step-by-step instructions for initial setup and basic usage]
+1. Connect the Bpod Arduino Panel to your computer via USB.
+2. Open the Arduino IDE and select the appropriate board and port.
+3. Upload the firmware to the Bpod Arduino Panel.
+4. Connect the Bpod Arduino Panel to the Bpod state machine using an RJ45 cable.
 
-1. [First step - setup/installation]
-2. [Second step - configuration]
-3. [Third step - basic operation]
+## 🚀 I/O Port Layout
 
-<img src=".img/[usage-image].png" alt="[Usage Description]" width="300"/>
+The following image provides an overview of the port layout and their respective functions.
 
-[Additional usage instructions, tips, or references to external resources]
+1. Arduino Due Board
+2. RJ45 Connector for Bpod communication
+3. Digital I/O Ports (5 groups of 8/12, 44 total)
+4. Analogue Input Ports (2 groups of 6, 12 total)
+5. Analogue Output Ports (2 total) and Audio Output (3.5mm jack)
 
-[If applicable, mention any measurement tools or validation methods]
+<img src=".img/usage.png" alt="port description" width="800"/>
 
-## ⚙️ Configuration & Tuning _(if applicable)_
+## ⚙️ Voltage Configuration
 
-[If your project requires calibration or fine-tuning, describe the process here]
+The max voltage levels for all the I/O are configured by the on-board switches. Each group can be configured between 3.3v and 5V. The ports on the module are grouped as follows:
 
-## 🔧 [Configuration/Calibration] Guidelines
+- D2 to D13
+- D14 to D21
+- D30 to D37
+- D38 to D45
+- D46 to D53
+- A0 to A5
+- A6 to A11
+- DAC0 and DAC1
 
-- [Step 1 - describe calibration procedure]
-- [Step 2 - describe parameter adjustment]
-- [Operating ranges and recommended settings]
-  > [Important notes or warnings about configuration]
+## ⚙️ Firmware and Protocol
 
-<div align="center">
-  <img src=".img/[configuration-image].png" alt="[Configuration Description]" width="600"/>
-</div>
+The firmware development is based on the Arduino platform, reference from the [Bpod shield](https://github.com/sanworks/Bpod_Gen2/tree/master/Examples/Firmware/Bpod%20Shield) firmware.
+
+The operation code (opcode in Bpod Language) of the device is varied according to the firmware. The functionality of each port has to be pre-defined in the firmware. Please refer to the [opcode table](./OPCODE_TABLE.md) for detailed information on available opcodes and their usage.
 
 ## 💻 Software Requirements
 
@@ -78,9 +86,16 @@ Under the following terms:
 
 > For the full legal text, see [LICENSE](LICENSE).
 
-## 📚 References _(if applicable)_
+## 💻 TODO
 
-[If your project is based on or references academic work, list citations here]
+- [ ] Add python program for standalone operation
+- [ ] Add firmware upload instructions
+- [ ] Add audio playback firmware example
+
+## 📚 Credits
+
+- **Bpod Shield**: [Sanworks LLC](https://sanworks.github.io/Bpod_Wiki/)
+- **Protocol**: [ArCOM](https://github.com/sanworks/ArCOM)
 
 ## 🤝 Contributing
 
