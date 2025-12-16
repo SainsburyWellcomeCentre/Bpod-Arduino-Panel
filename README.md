@@ -88,7 +88,7 @@ Under the following terms:
 
 ## 💻 TODO
 
-- [ ] Add python program for standalone operation
+- [ ] Add Python program for standalone operation
 - [ ] Add firmware upload instructions
 - [ ] Add audio playback firmware example
 
@@ -115,5 +115,6 @@ Under the following terms:
 - **Author**: [@DCisHurt](https://github.com/DCisHurt)
 - **Email**: [yuhsuan.chen@ucl.ac.uk](mailto:yuhsuan.chen@ucl.ac.uk)
 - **Website**: [FabLabs](https://sainsburywellcomecentre.github.io/fablabs-documentation/#Bpod-Arduino-Panel)
+
 
 
