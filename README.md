@@ -1,6 +1,6 @@
 # Bpod Arduino Panel
 
-![GitHub release](https://img.shields.io/github/v/release/SainsburyWellcomeCentre/Bpod-Arduino-Panel.svg)
+[![GitHub release](https://img.shields.io/github/v/release/SainsburyWellcomeCentre/Bpod-Arduino-Panel.svg)](https://github.com/SainsburyWellcomeCentre/Bpod-Arduino-Panel/releases/latest)
 
 A 58 I/O ports Bpod Module for neuroscience experiments.
 
